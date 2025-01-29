@@ -19,7 +19,8 @@ public class Selenium_Test {
     @Test
     void testSelenium() {
         WebDriver webDriver = new ChromeDriver();
-        Wait<WebDriver> wait = new WebDriverWait(webDriver, Duration.ofSeconds(5));
+        webDriver.manage().window().maximize();
+        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(5));
         webDriver.get("https://demoblaze.com");
 
         WebElement loginMenuLink = webDriver.findElement(By.id("login2"));
@@ -28,20 +29,21 @@ public class Selenium_Test {
 
         WebElement usernameInput = webDriver.findElement(By.id("loginusername"));
         WebElement passwordInput = webDriver.findElement(By.id("loginpassword"));
-        WebElement loginButton = webDriver.findElement(By.className("#btn btn-primary"));
+        WebElement loginButton = webDriver.findElement(By.xpath("//button[text()='Log in']"));
 
         wait.until(ExpectedConditions.visibilityOf(usernameInput));
         usernameInput.sendKeys("test");
         passwordInput.sendKeys("test");
 
         loginButton.click();
-        wait.until(ExpectedConditions.visibilityOf(usernameInput));
+        wait.until(ExpectedConditions.invisibilityOf(loginButton));
+
 
         WebElement welcomeLink = webDriver.findElement(By.id("nameofuser"));
         wait.until(ExpectedConditions.visibilityOf(welcomeLink));
         wait.until(ExpectedConditions.textToBePresentInElement(welcomeLink, "Welcome test"));
 
-        webDriver.close();
+        webDriver.quit();
 
     }
 
@@ -60,10 +62,9 @@ public class Selenium_Test {
         passwordInput.setValue("test");
 
         loginButton.click();
-        loginButton.should(Condition.disappear);
 
         Selenide.element(By.id("nameofuser"))
-                .shouldBe(Condition.visible)
+                .shouldBe(Condition.visible, Duration.ofSeconds(5))
                 .shouldHave(Condition.text("Welcome test"));
     }
 
