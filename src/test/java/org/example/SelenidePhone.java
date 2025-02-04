@@ -69,11 +69,11 @@ public class SelenidePhone {
          String confirmationText = confirmationPopup.getText();
          System.out.println("Текст подтверждения: " + confirmationText);
 
-         String amountText = confirmationText.split("\n")[1]; // Пример: "Amount: 360 USD"
+         String amountText = confirmationText.split("\n")[1]; 
          int amount = Integer.parseInt(amountText.replaceAll("[^0-9]", ""));
          System.out.println("Сумма заказа: " + amount);
 
-         String orderIdText = confirmationText.split("\n")[0]; // Пример: "Id: 123456"
+         String orderIdText = confirmationText.split("\n")[0]; 
          String orderId = orderIdText.replaceAll("[^0-9]", "");
          System.out.println("ID заказа: " + orderId);
 
