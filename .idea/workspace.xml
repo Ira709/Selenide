@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c17cf624-0cbf-4c94-ab06-1d8faaef4936" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/SelenidePhone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Selenium_Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WorkshopTwoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SelenidePhone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SelenidePhone.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,17 +33,34 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "onboarding.tips.debug.path": "/Users/trojan4ik/Desktop/Projects/Selenide_Workshop/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/trojan4ik/Desktop/Projects/Selenide_Workshop/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="TestNG.SelenidePhone.SelenideTest">
+}</component>
+  <component name="RunManager" selected="TestNG.SelenidePhone">
+    <configuration name="SelenidePhone" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenide_Workshop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.SelenidePhone" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SelenidePhone.SelenideTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenide_Workshop" />
       <extension name="coverage">
@@ -59,17 +73,6 @@
       <option name="MAIN_CLASS_NAME" value="org.example.SelenidePhone" />
       <option name="METHOD_NAME" value="SelenideTest" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Selenium_Test" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Selenide_Workshop" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Selenium_Test" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -113,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SelenidePhone" />
         <item itemvalue="TestNG.SelenidePhone.SelenideTest" />
         <item itemvalue="TestNG.WorkshopTwoTest" />
         <item itemvalue="TestNG.WorkshopTwoTest.testSelenideCollection" />
         <item itemvalue="TestNG.Selenium_Test.testSelenium (1)" />
-        <item itemvalue="TestNG.Selenium_Test" />
       </list>
     </recent_temporary>
   </component>
@@ -146,12 +149,29 @@
       <option name="project" value="LOCAL" />
       <updated>1738141104845</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Deleted two tests and added one new">
+      <option name="closed" value="true" />
+      <created>1738149150152</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738149150152</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Deleted two tests and added one new">
+      <option name="closed" value="true" />
+      <created>1738149180437</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1738149180437</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added new tests" />
     <MESSAGE value="Added one test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added one test" />
+    <MESSAGE value="Deleted two tests and added one new" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted two tests and added one new" />
   </component>
 </project>
